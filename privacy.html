@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chính sách bảo mật — TTP P0C Encrypted Backup</title>
+  <body>
+    <main>
+      <h1>Chính sách bảo mật</h1>
+      <p>TTP P0C Encrypted Backup · ngày 11/10/2026</p>
+      <h2>Mục đích và quyền truy cập</h2>
+      <p>Công cụ cá nhân dùng Drive của chủ tài khoản để lưu và phục hồi backup mã hóa của app TTP nội bộ. Quyền OAuth duy nhất là <code>drive.file</code>. Công cụ chỉ truy cập tệp do cùng ứng dụng tạo hoặc được cấp riêng; không đọc Gmail, Photos hay toàn bộ Drive.</p>
+      <h2>Dữ liệu được xử lý</h2>
+      <p>Trên máy, công cụ xử lý dump PostgreSQL không chứa phiên đăng nhập, các tệp đính kèm, siêu dữ liệu, migrations, manifest, thời gian và checksum. Chỉ dùng dữ liệu giả lập trước nghiệm thu. Dump và tệp riêng được mã hóa có xác thực trước khi truyền; Drive nhận các khối mã hóa cùng siêu dữ liệu kỹ thuật của kho Restic. Không tải mật khẩu database, token phiên, khóa mã hóa hoặc credentials dạng rõ vào kho backup.</p>
+      <h2>Lưu trữ và chia sẻ</h2>
+      <p>Credentials OAuth và khóa mã hóa nằm trong tệp private trên thiết bị của chủ tài khoản. Khóa phục hồi cần được giữ độc lập ngoài Mac. Dữ liệu không được bán, dùng cho quảng cáo hoặc huấn luyện AI. Công cụ truyền backup mã hóa tới Drive và không chia sẻ nội dung với bên khác. Google xử lý lưu trữ theo chính sách của Google. Trang giới thiệu dùng GitHub Pages; GitHub có thể ghi IP khách truy cập vì bảo mật theo chính sách GitHub.</p>
+      <h2>Kiểm soát của chủ tài khoản</h2>
+      <p>Chủ tài khoản có thể thu hồi OAuth trong phần bảo mật Google; việc này có thể dừng backup và restore. Backup giữ nhiều phiên bản, không đồng bộ xóa hoặc tự prune. Khi quota đạt ngưỡng an toàn, công cụ dừng và báo lỗi, không nâng cấp trả phí. Chủ tài khoản quyết định việc xóa và cần giữ ít nhất một bản phục hồi đã xác minh.</p>
+      <h2>Giới hạn</h2>
+      <p>Trang này không công bố backup hoặc nghiệm thu đã thành công. Backup chỉ đạt sau upload, xác thực khối mã hóa và phục hồi độc lập thành công. Máy tắt hoặc mất Internet không tải lên được; trạng thái app phải báo lần thành công gần nhất và lỗi.</p>
+      <p>Đơn vị quản lý: chủ tài khoản GitHub <a href="https://github.com/thuannguyen250194">thuannguyen250194</a>. Liên hệ qua địa chỉ hỗ trợ trên màn hình OAuth. <a href="index.html">Trang giới thiệu</a></p>
+    </main>
+  </body>
+</html>
